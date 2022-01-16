@@ -1,0 +1,25 @@
+from tkinter import *
+from tkinter import ttk
+
+
+raiz = Tk()
+raiz.title("Primera ventana")
+
+#raiz.resizable(1, 1)  # ancho y alto de la pagina, con  0 y 0 es false y no puede cambiarse el tamanio
+# cambiar icono, imagen com extencion .ico, tamanio
+raiz.iconbitmap("duki.ico")
+#raiz.geometry("650x350")  # cambiar altura y largo de la pagina
+raiz.config(bg="green")  # hacer agustes en la pagina, el bg me cambia el color de fondo
+
+miFrame = Frame() # tengo que empaquetar esto, osea meterlo en la raiz
+# empaquetado
+miFrame.pack(side="top")
+miFrame.config(bg="yellow")
+miFrame.config(width="650", height="330")
+
+
+
+
+# final
+raiz.mainloop()  # es necesario para que puede este en ejecucion
+# modificar caracteristicas por defecto
